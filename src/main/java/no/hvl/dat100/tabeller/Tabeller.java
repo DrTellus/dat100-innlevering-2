@@ -8,17 +8,22 @@ public class Tabeller {
             System.out.print(tabell[i] + " ");
         }
 
-
-
-
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+        String tekst = "[";//initialiserer teksten som [
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-	}
+        for (int i = 0; i < tabell.length; i++) {//lager forløkke der
+            tekst = tekst + tabell[i]; //teksten legger til tabellen
+            if (i < tabell.length -1) {// for alle elementer i tabellen unntatt den siste
+                tekst = tekst + ",";//legg til komma etter
+            }
+        }
+        tekst = tekst + "]"; // legger til ] etter tekst
+        return tekst; //returnerer ferdig tekst
+
+    }
 
 	// c)
 	public static int summer(int[] tabell) {
