@@ -2,8 +2,11 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a)
+	// a) Jeg tester
 	public static void skrivUt(int[] tabell) {
+        for (int i = 0; i < tabell.length; i++) {
+            System.out.print(tabell[i] + " ");
+        }
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
