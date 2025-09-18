@@ -2,21 +2,21 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	// a) Jeg tester
-	public static void skrivUt(int[] tabell) {
+    // a) Jeg tester
+    public static void skrivUt(int[] tabell) {
         for (int i = 0; i < tabell.length; i++) {
             System.out.print(tabell[i] + " ");
         }
 
-	}
+    }
 
-	// b)
-	public static String tilStreng(int[] tabell) {
+    // b)
+    public static String tilStreng(int[] tabell) {
         String tekst = "[";//initialiserer teksten som [
 
         for (int i = 0; i < tabell.length; i++) {//lager forløkke der
             tekst = tekst + tabell[i]; //teksten legger til tabellen
-            if (i < tabell.length -1) {// for alle elementer i tabellen unntatt den siste
+            if (i < tabell.length - 1) {// for alle elementer i tabellen unntatt den siste
                 tekst = tekst + ",";//legg til komma etter
             }
         }
@@ -25,23 +25,26 @@ public class Tabeller {
 
     }
 
-	// c)
-	public static int summer(int[] tabell) {
+    // c)
+    public static int summer(int[] tabell) {
         int sum = 0; //initialiserer sum til 0
-        for (int i = 0; i<tabell.length; i++) {//lager forløkke der..
+        for (int i = 0; i < tabell.length; i++) {//lager forløkke der..
             sum = sum + tabell[i];//summen øker med hver instans av i
         }
         return sum; //returnerer summen av alle elementene
 
-	}
+    }
 
-	// d)
-	public static boolean finnesTall(int[] tabell, int tall) {
+    // d)
+    public static boolean finnesTall(int[] tabell, int tall) {
+        for (int i = 0; i < tabell.length; i++) {// søker langs tabellen
+            if (tabell[i] == tall) { //hvis den finner tall i tabellen
+                return true; //er tallet i tabellen, altså true
+            }
+        } return false;// hvis ikke tallet er i tabell er det false
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
+    }
 
-	}
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
