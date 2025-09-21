@@ -83,7 +83,7 @@ public class Tabeller {
             }
 //       Om ingen brudd, og alt er stigende..
         }return true;
-    }
+    }// her kunne man brukt Arrays.sort tab for å legge alt i riktig rekkefølge
 
 
 	// h)
