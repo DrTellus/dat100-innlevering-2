@@ -101,6 +101,7 @@ public class Tabeller {
             //Men tar vare på lengde1 slik at "ny" blir elementene fra
             //.. tabell1 og så tabell2
         }return ny;
+
     }
 
 
