@@ -39,6 +39,7 @@ class TabellerEnhetsTests {
 		assertEquals("[1,4,6]", Tabeller.tilStreng(tabell1));
 		assertEquals("[1]", Tabeller.tilStreng(tabell2));
 		assertEquals("[]", Tabeller.tilStreng(tabell3));
+
 	}
 
 	@Test
@@ -46,6 +47,7 @@ class TabellerEnhetsTests {
 		assertEquals(11, Tabeller.summer(tabell1));
 		assertEquals(1, Tabeller.summer(tabell2));
 		assertEquals(0, Tabeller.summer(tabell3));
+
 	}
 
 	@Test
