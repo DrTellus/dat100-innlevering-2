@@ -72,29 +72,29 @@ public static boolean erLik(int[][] a, int[][] b) {
 
 
 
-// e)
-public static int[][] speile(int[][] matrise) {
+    // e)
+    public static int[][] speile(int[][] matrise) {
+        int[][] nyMatrise = new int[matrise.length][];
 
-    // TODO
+//        for (int i = 0; i < nyMatrise.length; i++) {
+//            nyMatrise[i] = new int[matrise[i].length];
+//            int k = 0;
+//
+//            for (int j = nyMatrise[i].length - 1; j >= 0 ; j--) {
+//                nyMatrise[i][k] = matrise[i][j];
+//                k++;
+//            }
+//        }
 
-    throw new UnsupportedOperationException("Metoden speile ikke implementert");
+        for (int i = 0; i < nyMatrise.length; i++) {
+            nyMatrise[i] = new int[matrise[i].length];
+            for (int j = 0; j < nyMatrise[i].length; j++) {
+                nyMatrise[i][j] = matrise[j][i];
 
-}
+            }
 
-// f)
-public static int[][] multipliser(int[][] a, int[][] b) {
-        int raderA = a.length;
-        int kolonnerA = a[0].length;
-        int raderB = b.length;
-        int kolonnerB = b[0].length;
-
-        if (kolonnerA != raderB) {
-            return false;
         }
-
-
-    // TODO
-    throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-
+        return nyMatrise;
+    }
 }
-}
+
