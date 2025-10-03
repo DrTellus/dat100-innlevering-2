@@ -86,21 +86,4 @@ public class Matriser {
         }
         return nyMatrise;
 	}
-
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-        if (a[0].length == b.length){
-            int[][] nyMatrise = new int[a.length][b[0].length];
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < b[0].length; j++) {
-                    int sum = 0;
-                    for (int k = 0; k < ; k++) {
-                        
-                    }
-                }
-            }
-
-        }
-
-	}
 }
